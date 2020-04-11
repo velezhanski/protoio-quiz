@@ -2,13 +2,10 @@
 var jsonData = getJsonData();
 
 // Builds the Quiz
-var quizData = buildQuiz();
-
-// Outputs the result
 const topBarContainer = document.getElementById('topContainer');
 var quizContainer = document.getElementById('quizContainer');
 
-var output = outputQuiz(topBarContainer, quizContainer);
+var quizData = buildQuiz(topBarContainer, quizContainer);
 
 // Controls the Slides
 var currentSlide = 0

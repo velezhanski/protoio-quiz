@@ -1,6 +1,12 @@
 // Here we build the actual output for the quiz and output it in the quizData variable 
-function buildQuiz(quizContainer) {
+function buildQuiz(topBarContainer, quizContainer) {
   var quizData = [];
+  var output = (
+    `<h1>${jsonData.title}</h1>
+    <h2>${jsonData.description}</h2>`
+  );
+
+  topBarContainer.innerHTML = output;
 
   // Here we cycle throught the questions
   jsonData.questions.forEach((question) => {
@@ -47,5 +53,6 @@ function buildQuiz(quizContainer) {
     );
 
   });
-  return quizData;
+
+  quizContainer.innerHTML = quizData.join('');
 }
