@@ -1,10 +1,11 @@
 body {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Work Sans', sans-serif;
   color: #333;
   font-weight: 300;
   text-align: center;
   background-color: #f8f6f0;
+  margin: 0;
 }
 
 h1 {
@@ -23,6 +24,22 @@ h2 {
   font-size: 14px;
   background-color: #444;
   color: #fff;
+}
+
+.question {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.answers label {
+  display: block;
+  margin-bottom: 10px;
 }
 
 button {
@@ -58,6 +75,12 @@ button:hover {
 
 .quiz-box {
   position: relative;
-  height: 150px;
+  height: 200px;
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .quiz-box {
+    height: 300px;
+  }
 }
