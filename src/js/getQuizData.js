@@ -1,3 +1,4 @@
+// Here we get the Quiz Data from the JSON file and put it into the jsonData variable
 function getJsonData() {
   var jsonData
   $.ajax({

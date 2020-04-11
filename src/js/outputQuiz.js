@@ -7,5 +7,5 @@ function outputQuiz(topBarContainer, quizContainer) {
   );
 
   topBarContainer.innerHTML = output;
-  quizContainer.innerHTML = quizData;
+  quizContainer.innerHTML = quizData.join('');
 }

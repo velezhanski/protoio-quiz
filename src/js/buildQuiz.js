@@ -1,9 +1,12 @@
+// Here we build the actual output for the quiz and output it in the quizData variable 
 function buildQuiz(quizContainer) {
   var quizData = [];
 
+  // Here we cycle throught the questions
   jsonData.questions.forEach((question) => {
     var answers = []
 
+    // Bellow is the logic which checks for what type of question it is
     if (question.question_type == "mutiplechoice-single") {
       question.possible_answers.forEach((answer) => {
         answers.push(
@@ -37,6 +40,7 @@ function buildQuiz(quizContainer) {
       )
     }
 
+    // Here we insert the quiz data into the variable 
     quizData.push(
       `<div class="slide">
         <div class="question"> ${question.title} </div>

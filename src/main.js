@@ -9,3 +9,7 @@ const topBarContainer = document.getElementById('topContainer');
 const quizContainer = document.getElementById('quizContainer');
 
 var output = outputQuiz(topBarContainer, quizContainer);
+
+// Controls the Slides
+var currentSlide = 0
+slideController(currentSlide);
