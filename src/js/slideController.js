@@ -6,7 +6,9 @@ function slideController(n) {
   const slides = document.querySelectorAll(".slide");
 
   // Switches to next Slide
-  nextButton.addEventListener("click", showNextSlide);
+  nextButton.addEventListener("click", function () {
+    showNextSlide(n)
+  });
 
   // Controls the visibility of the slides
   slides[currentSlide].classList.remove('active-slide');
@@ -17,12 +19,18 @@ function slideController(n) {
   if (currentSlide === slides.length - 1) {
     nextButton.style.display = 'none';
     submitButton.style.display = 'inline-block';
+
   } else {
     nextButton.style.display = 'inline-block';
     submitButton.style.display = 'none';
+
   }
 }
 
-function showNextSlide() {
-  slideController(currentSlide + 1);
+function showNextSlide(currentQuestionId) {
+  validateAnswer(currentQuestionId);
+
+  setTimeout(function () {
+    slideController(currentSlide + 1)
+  }, 3000);
 }

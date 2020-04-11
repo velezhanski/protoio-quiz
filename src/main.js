@@ -6,7 +6,7 @@ var quizData = buildQuiz();
 
 // Outputs the result
 const topBarContainer = document.getElementById('topContainer');
-const quizContainer = document.getElementById('quizContainer');
+var quizContainer = document.getElementById('quizContainer');
 
 var output = outputQuiz(topBarContainer, quizContainer);
 

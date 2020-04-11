@@ -8,4 +8,6 @@ function outputQuiz(topBarContainer, quizContainer) {
 
   topBarContainer.innerHTML = output;
   quizContainer.innerHTML = quizData.join('');
+
+  return quizContainer;
 }

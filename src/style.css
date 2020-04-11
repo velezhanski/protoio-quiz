@@ -1,10 +1,10 @@
 body {
   font-size: 16px;
   font-family: 'Work Sans', sans-serif;
-  color: #333;
+  color: #e0e0e0;
   font-weight: 300;
   text-align: center;
-  background-color: #f8f6f0;
+  background-color: #2d3538;
   margin: 0;
 }
 
@@ -24,6 +24,11 @@ h2 {
   font-size: 14px;
   background-color: #444;
   color: #fff;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .question {
@@ -52,6 +57,7 @@ button {
   padding: 20px;
   cursor: pointer;
   margin-bottom: 20px;
+  position: relative;
 }
 
 button:hover {
@@ -59,22 +65,22 @@ button:hover {
 }
 
 .slide {
-  position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s;
+  display: none;
 }
 
 .active-slide {
   opacity: 1;
   z-index: 2;
+  display: block;
 }
 
 .quiz-box {
-  position: relative;
   height: 200px;
   margin-top: 40px;
 }

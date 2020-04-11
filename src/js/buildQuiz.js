@@ -11,8 +11,7 @@ function buildQuiz(quizContainer) {
       question.possible_answers.forEach((answer) => {
         answers.push(
           `<label>
-            <input type="radio" name="question${answer.a_id}" value="${answer.caption}">
-            ${answer.a_id} :
+            <input type="radio" name="question${question.q_id}" value="${answer.a_id}">
             ${answer.caption}
           </label>`
         )
@@ -21,8 +20,7 @@ function buildQuiz(quizContainer) {
       question.possible_answers.forEach((answer) => {
         answers.push(
           `<label>
-            <input type="checkbox" name="question${answer.a_id}" value="${answer.caption}">
-            ${answer.a_id} :
+            <input type="checkbox" name="question${question.q_id}" value="${answer.caption}">
             ${answer.caption}
           </label>`
         )
@@ -30,11 +28,11 @@ function buildQuiz(quizContainer) {
     } else if (question.question_type == "truefalse") {
       answers.push(
         `<label>
-            <input type="radio" name="true" value="true">
+            <input type="radio" name="truefalse" value="true">
             True
           </label>
           <label>
-            <input type="radio" name="true" value="false">
+            <input type="radio" name="truefalse" value="false">
             False
           </label>`
       )
@@ -47,6 +45,7 @@ function buildQuiz(quizContainer) {
         <div class="answers"> ${answers.join("")} </div>
       </div>`
     );
+
   });
   return quizData;
 }

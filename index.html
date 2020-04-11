@@ -11,12 +11,16 @@
 <body>
   <div id="topContainer"></div>
 
-  <div class="quiz-box">
-    <div id="quizContainer"></div>
+  <div class="flex-box">
+    <div class="quiz-box">
+      <div id="quizContainer"></div>
+    </div>
+
+    <div>
+      <button id="next">Next Question</button>
+      <button id="submit">Submit Quiz</button>
+    </div>
   </div>
-  
-  <button id="next">Next Question</button>
-  <button id="submit">Submit Quiz</button>
 
   <div id="results"></div>
 
@@ -27,6 +31,7 @@
   <script src="./src/js/getQuizData.js"></script>
   <script src="./src/js/buildQuiz.js"></script>
   <script src="./src/js/outputQuiz.js"></script>
+  <script src="./src/js/validateAnswer.js"></script>
   <script src="./src/js/slideController.js"></script>
 
   <!-- Main Script -->
