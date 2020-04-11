@@ -1,12 +1,9 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<br />
 <p align="center">
   <h3 align="center">Simple JS quiz App</h3>
-
   <p align="center">
     This is a simple quiz App made with AJAX and JS.
-    <br />
   </p>
 </p>
 
@@ -29,7 +26,8 @@ Highlights:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-You may view the live Demo here -> [![Netlify Demo][live-demo]](https://example.com)
+You may view the live Demo here -> 
+<img src="https://temudokter.netlify.com/static/media/netlify.92b6c228.png" alt="Live Demo" width="50px" height="50px" style="vertical-align: middle">
 
 
 <!-- CONTRIBUTING -->
