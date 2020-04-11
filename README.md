@@ -27,7 +27,7 @@ Highlights:
 ## Getting Started
 
 You may view the live Demo here -> 
-<img src="https://temudokter.netlify.com/static/media/netlify.92b6c228.png" alt="Live Demo" width="50px" height="50px" style="vertical-align: middle">
+<img src="https://temudokter.netlify.com/static/media/netlify.92b6c228.png" alt="Live Demo" width="50px" height="50px" valign="middle">
 
 
 <!-- CONTRIBUTING -->
