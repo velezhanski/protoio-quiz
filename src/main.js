@@ -3,7 +3,7 @@ var jsonData = getJsonData();
 
 // Builds the Quiz
 const topBarContainer = document.getElementById('topContainer');
-var quizContainer = document.getElementById('quizContainer');
+const quizContainer = document.getElementById('quizContainer');
 
 var quizData = buildQuiz(topBarContainer, quizContainer);
 

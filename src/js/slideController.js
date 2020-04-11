@@ -10,6 +10,10 @@ function slideController(n) {
     showNextSlide(n)
   });
 
+  submitButton.addEventListener("click", function () {
+    validateAnswer(n);
+  });
+
   // Controls the visibility of the slides
   slides[currentSlide].classList.remove('active-slide');
   slides[n].classList.add('active-slide');

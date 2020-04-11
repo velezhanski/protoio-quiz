@@ -1,10 +1,7 @@
 function validateAnswer(currentQuestionId) {
   // gather answer containers from our quiz
   const answerContainers = quizContainer.querySelectorAll('.answers');
-
-  // keep track of user's answers
-  let numCorrect = 0;
-
+  
   var question = jsonData.questions.filter(obj => {
     return obj.q_id === currentQuestionId + 1
   })
@@ -16,7 +13,7 @@ function validateAnswer(currentQuestionId) {
 
   // if answer is correct
   if (userAnswer == question[0].correct_answer) {
-    answerContainer.querySelector(selector).parentElement.style.color = '#00aa00';
+    answerContainer.querySelector(selector).parentElement.style.color = 'lightgreen';
 
   } else {
     answerContainer.querySelector(selector).parentElement.style.color = 'red';
