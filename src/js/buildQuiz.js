@@ -14,6 +14,27 @@ function buildQuiz(quizContainer) {
           </label>`
         )
       })
+    } else if (question.question_type == "mutiplechoice-multiple") {
+      question.possible_answers.forEach((answer) => {
+        answers.push(
+          `<label>
+            <input type="checkbox" name="question${answer.a_id}" value="${answer.caption}">
+            ${answer.a_id} :
+            ${answer.caption}
+          </label>`
+        )
+      })
+    } else if (question.question_type == "truefalse") {
+      answers.push(
+        `<label>
+            <input type="radio" name="true" value="true">
+            True
+          </label>
+          <label>
+            <input type="radio" name="true" value="false">
+            False
+          </label>`
+      )
     }
 
     quizData.push(
