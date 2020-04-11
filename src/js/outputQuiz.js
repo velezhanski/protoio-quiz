@@ -1,4 +1,4 @@
-function outputQuiz(topBarContainer) {
+function outputQuiz(topBarContainer, quizContainer) {
   var output;
 
   var output = (
@@ -7,4 +7,5 @@ function outputQuiz(topBarContainer) {
   );
 
   topBarContainer.innerHTML = output;
+  quizContainer.innerHTML = quizData;
 }
