@@ -1,17 +1,10 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<p align="center">
-  <h3 align="center">Simple JS quiz App</h3>
-  <p align="center">
-    This is a simple quiz App made with AJAX and JS.
-  </p>
-</p>
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is an built for an interview test, it's a simple clean app which pulls JSON data from a server using AJAX, and outputs it into the APP. Let's hope that it will land me the job :smile:
+This was built for an interview test, it's a simple clean app which pulls JSON data from a server using AJAX, and outputs it into the App. Let's hope that it will land me the job :smile:
 
 Highlights:
 * I have tried to comment the code as needed and make the code as clean as possible
@@ -28,18 +21,6 @@ Highlights:
 
 You may view the live Demo here -> 
 <img src="https://temudokter.netlify.com/static/media/netlify.92b6c228.png" alt="Live Demo" width="50px" height="50px" valign="middle">
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 
 <!-- CONTACT -->
