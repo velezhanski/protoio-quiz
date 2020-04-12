@@ -1,18 +1,6 @@
 // Controls the slides
 function slideController(n) {
-  // Variables
-  const nextButton = document.getElementById("next");
-  const submitButton = document.getElementById('submit');
   const slides = document.querySelectorAll(".slide");
-
-  // Switches to next Slide
-  nextButton.addEventListener("click", function () {
-    showNextSlide(n)
-  });
-
-  submitButton.addEventListener("click", function () {
-    validateAnswer(n);
-  });
 
   // Controls the visibility of the slides
   slides[currentSlide].classList.remove('active-slide');
@@ -29,6 +17,7 @@ function slideController(n) {
     submitButton.style.display = 'none';
 
   }
+  nextButton.disabled = false;
 }
 
 function showNextSlide(currentQuestionId) {
@@ -37,4 +26,6 @@ function showNextSlide(currentQuestionId) {
   setTimeout(function () {
     slideController(currentSlide + 1)
   }, 3000);
+
+
 }

@@ -2,15 +2,21 @@
 function buildQuiz(topBarContainer, quizContainer) {
   var quizData = [];
   var output = (
-    `<h1>${jsonData.title}</h1>
-    <h2>${jsonData.description}</h2>`
+    `<h1>${jsonQuizData.title}</h1>
+    <hr style="border-color: #00000033; width: 65%;">
+    <h2>${jsonQuizData.description}</h2>`
   );
 
   topBarContainer.innerHTML = output;
 
   // Here we cycle throught the questions
-  jsonData.questions.forEach((question) => {
+  jsonQuizData.questions.forEach((question) => {
     var answers = []
+    var images = []
+
+    images.push(
+      `<img src="${question.img}" alt="${question.caption}" style="width: 80%; height: auto; border-radius: 3px;">`
+    )
 
     // Bellow is the logic which checks for what type of question it is
     if (question.question_type == "mutiplechoice-single") {
@@ -26,7 +32,7 @@ function buildQuiz(topBarContainer, quizContainer) {
       question.possible_answers.forEach((answer) => {
         answers.push(
           `<label>
-            <input type="checkbox" name="question${question.q_id}" value="${answer.caption}">
+            <input type="checkbox" name="question${question.q_id}" value="${answer.a_id}">
             ${answer.caption}
           </label>`
         )
@@ -34,11 +40,11 @@ function buildQuiz(topBarContainer, quizContainer) {
     } else if (question.question_type == "truefalse") {
       answers.push(
         `<label>
-            <input type="radio" name="truefalse" value="true">
+            <input type="radio" name="question${question.q_id}" value="true">
             True
           </label>
           <label>
-            <input type="radio" name="truefalse" value="false">
+            <input type="radio" name="question${question.q_id}" value="false">
             False
           </label>`
       )
@@ -48,7 +54,10 @@ function buildQuiz(topBarContainer, quizContainer) {
     quizData.push(
       `<div class="slide">
         <div class="question"> ${question.title} </div>
-        <div class="answers"> ${answers.join("")} </div>
+        <div class="answer-container">
+        <div class="images">${images.join("")}</div>
+        <div class="answers"> ${answers.join("")}</div>
+        </div>
       </div>`
     );
 

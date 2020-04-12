@@ -11,19 +11,24 @@ body {
 h1 {
   font-weight: 300;
   margin: 0px;
-  padding: 10px;
   font-size: 20px;
-  background-color: #444;
   color: #fff;
+  padding: 10px;
 }
 
 h2 {
   font-weight: 300;
   margin: 0px;
-  padding: 10px;
   font-size: 14px;
-  background-color: #444;
   color: #fff;
+  padding: 10px;
+}
+
+.top-container {
+  background-color: #05a1c075;
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 10px;
 }
 
 .flex-box {
@@ -33,13 +38,22 @@ h2 {
 
 .question {
   font-size: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.answer-container {
+  display: flex;
+}
+
+.images {
+  flex-basis: 50%;
 }
 
 .answers {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
+  align-self: center;
 }
 
 .answers label {
@@ -50,7 +64,7 @@ h2 {
 button {
   font-family: 'Work Sans', sans-serif;
   font-size: 22px;
-  background-color: #279;
+  background-color: #05a1c075;
   color: #fff;
   border: 0px;
   border-radius: 3px;
@@ -61,7 +75,7 @@ button {
 }
 
 button:hover {
-  background-color: #38a;
+  background-color: #05a1c08e;
 }
 
 .slide {
@@ -81,12 +95,6 @@ button:hover {
 }
 
 .quiz-box {
-  height: 200px;
-  margin-top: 40px;
-}
-
-@media only screen and (max-width: 768px) {
-  .quiz-box {
-    height: 300px;
-  }
+  height: auto;
+  margin: 40px;
 }
