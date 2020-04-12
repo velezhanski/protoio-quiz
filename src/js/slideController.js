@@ -26,6 +26,4 @@ function showNextSlide(currentQuestionId) {
   setTimeout(function () {
     slideController(currentSlide + 1)
   }, 3000);
-
-
 }

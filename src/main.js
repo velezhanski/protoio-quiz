@@ -23,8 +23,13 @@ nextButton.addEventListener("click", function () {
 let currentSlide = 0
 slideController(currentSlide);
 
+// Show Results
 submitButton.addEventListener("click", function () {
   validateAnswer(currentSlide);
+
   showResult(resultsContainer);
-  $('.hover_bkgr_fricc').show();
+
+  setTimeout(function () {
+    $('.hover_bkgr_fricc').show();
+  }, 3000);
 });
