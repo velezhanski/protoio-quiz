@@ -1,7 +1,7 @@
 // Variables
 const nextButton = document.getElementById("next");
 const submitButton = document.getElementById('submit');
-const topBarContainer = document.getElementById('topContainer');
+const headerContainer = document.getElementById('header');
 const quizContainer = document.getElementById('quizContainer');
 const resultsContainer = document.getElementById('resultsContainer');
 var score = 0;
@@ -12,7 +12,7 @@ var jsonQuizData = getQuizData();
 var jsonResultsData = getResultsData();
 
 // Builds the Quiz
-var quizData = buildQuiz(topBarContainer, quizContainer);
+var quizData = buildQuiz(headerContainer, quizContainer);
 
 // Validates answer and switches to next slide
 nextButton.addEventListener("click", function () {

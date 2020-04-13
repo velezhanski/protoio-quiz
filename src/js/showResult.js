@@ -15,8 +15,8 @@ function showResult(resultsContainer) {
   jsonResultsData.results.forEach((result) => {
     if (scorePercentage >= result.minpoints && scorePercentage <= result.maxpoints) {
       resultsData.push(
-        `<h1>${result.title} - You Scored: ${scorePercentage}%</h1>
-        <h2>${result.message}</h2>
+        `<h1 class="title">${result.title} - You Scored: ${scorePercentage}%</h1>
+        <h2 class="subtitle">${result.message}</h2>
         <img src="${result.img}" alt="${result.title}">`
       );
     }

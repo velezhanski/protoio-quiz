@@ -1,0 +1,20 @@
+.title {
+  font-weight: 300;
+  margin: 0px;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+}
+
+.subtitle {
+  font-weight: 300;
+  margin: 0px;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+}
+
+hr {
+  border-color: #00000033;
+  width: 65%;
+}

@@ -6,11 +6,21 @@ This was built for an interview test, it's a simple clean app which pulls JSON d
 You may view the live Demo here -> 
 <a href="https://protoio-quiz.netlify.com/" target="_blank"><img src="https://temudokter.netlify.com/static/media/netlify.92b6c228.png" alt="Live Demo" width="50px" height="50px" valign="middle"></a>
 
+## Getting Started
+All you need to get started is launch a server from the src folder. 
+You can do that by installing http-server either globally or locally.
+
+### Globally
+`npm i http-server`
+### Locally
+`npm install http-server -g`
+
+And then starting the local server with 
+`http-server ./src`
 
 ## Built With
 * [JQuery](https://jquery.com)
 * [JS](https://www.javascript.com)
-
 
 ## Contact
 Alex Filipenko - [LinkedIn](https://www.linkedin.com/in/afilipenko) - alexfilipenko719@gmail.com

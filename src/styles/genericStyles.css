@@ -1,0 +1,28 @@
+body {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  color: #e0e0e0;
+  font-weight: 300;
+  text-align: center;
+  background-color: #2d3538;
+  margin: 0;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+#header {
+  background-color: #05a1c075;
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 10px;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+}

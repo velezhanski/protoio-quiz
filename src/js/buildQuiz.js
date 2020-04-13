@@ -1,14 +1,14 @@
 // Here we build the actual output for the quiz and output it in the quizData variable 
-function buildQuiz(topBarContainer, quizContainer) {
+function buildQuiz(headerContainer, quizContainer) {
   var quizData = [];
 
   // Title and Subtitle Output
   var output = (
-    `<h1>${jsonQuizData.title}</h1>
+    `<h1 class="title">${jsonQuizData.title}</h1>
     <hr>
-    <h2>${jsonQuizData.description}</h2>`
+    <h2 class="subtitle">${jsonQuizData.description}</h2>`
   );
-  topBarContainer.innerHTML = output;
+  headerContainer.innerHTML = output;
 
   // Here we cycle throught the questions
   jsonQuizData.questions.forEach((question) => {
@@ -24,7 +24,7 @@ function buildQuiz(topBarContainer, quizContainer) {
     if (question.question_type == "mutiplechoice-single") {
       question.possible_answers.forEach((answer) => {
         answers.push(
-          `<label>
+          `<label class="questionLabel">
             <input type="radio" name="question${question.q_id}" value="${answer.a_id}">
             ${answer.caption}
           </label>`
@@ -33,7 +33,7 @@ function buildQuiz(topBarContainer, quizContainer) {
     } else if (question.question_type == "mutiplechoice-multiple") {
       question.possible_answers.forEach((answer) => {
         answers.push(
-          `<label>
+          `<label class="questionLabel">
             <input type="checkbox" name="question${question.q_id}" value="${answer.a_id}">
             ${answer.caption}
           </label>`
@@ -41,11 +41,11 @@ function buildQuiz(topBarContainer, quizContainer) {
       })
     } else if (question.question_type == "truefalse") {
       answers.push(
-        `<label>
+        `<label class="questionLabel">
             <input type="radio" name="question${question.q_id}" value="true">
             True
           </label>
-          <label>
+          <label class="questionLabel">
             <input type="radio" name="question${question.q_id}" value="false">
             False
           </label>`
