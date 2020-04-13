@@ -27,7 +27,6 @@ function validateAnswer(currentQuestionId) {
         answerContainer.querySelector(selector).parentElement.style.color = 'red';
       }
       answerContainer.querySelector(`input[value="${question[0].correct_answer}"]`).parentElement.style.color = 'lightgreen';
-
     }
 
     // Validates mutiplechoice-multi
@@ -41,10 +40,10 @@ function validateAnswer(currentQuestionId) {
 
     if (userAnswer.toString() == question[0].correct_answer.toString()) {
       score += jsonQuizData.questions[currentQuestionId].points;
-
       for (var i = 0; i < selected.length; i++) {
         selected[i].parentElement.style.color = "lightgreen"
       }
+      
     } else {
       if (userAnswer != []) {
         for (var i = 0; i < selected.length; i++) {

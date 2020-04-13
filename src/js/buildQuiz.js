@@ -8,7 +8,6 @@ function buildQuiz(topBarContainer, quizContainer) {
     <hr>
     <h2>${jsonQuizData.description}</h2>`
   );
-
   topBarContainer.innerHTML = output;
 
   // Here we cycle throught the questions

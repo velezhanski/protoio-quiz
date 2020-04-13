@@ -11,11 +11,9 @@ function slideController(n) {
   if (currentSlide === slides.length - 1) {
     nextButton.style.display = 'none';
     submitButton.style.display = 'inline-block';
-
   } else {
     nextButton.style.display = 'inline-block';
     submitButton.style.display = 'none';
-
   }
   nextButton.disabled = false;
 }
@@ -23,7 +21,6 @@ function slideController(n) {
 // Validates answer and moves to next slide
 function showNextSlide(currentQuestionId) {
   validateAnswer(currentQuestionId);
-
   setTimeout(function () {
     slideController(currentSlide + 1)
   }, 3000);
