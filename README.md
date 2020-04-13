@@ -8,15 +8,6 @@ You may view the live Demo here ->
 
 ## Getting Started
 All you need to get started is launch a server from the src folder. 
-You can do that by installing http-server either globally or locally.
-
-### Globally
-`npm i http-server`
-### Locally
-`npm install http-server -g`
-
-And then starting the local server with 
-`http-server ./src`
 
 ## Built With
 * [JQuery](https://jquery.com)
