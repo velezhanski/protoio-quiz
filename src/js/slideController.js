@@ -7,7 +7,7 @@ function slideController(n) {
   slides[n].classList.add('active-slide');
   currentSlide = n;
 
-  // Checks if the slide is last or not 
+  // Controls the buttons
   if (currentSlide === slides.length - 1) {
     nextButton.style.display = 'none';
     submitButton.style.display = 'inline-block';
@@ -20,6 +20,7 @@ function slideController(n) {
   nextButton.disabled = false;
 }
 
+// Validates answer and moves to next slide
 function showNextSlide(currentQuestionId) {
   validateAnswer(currentQuestionId);
 

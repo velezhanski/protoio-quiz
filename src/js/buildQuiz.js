@@ -1,9 +1,11 @@
 // Here we build the actual output for the quiz and output it in the quizData variable 
 function buildQuiz(topBarContainer, quizContainer) {
   var quizData = [];
+
+  // Title and Subtitle Output
   var output = (
     `<h1>${jsonQuizData.title}</h1>
-    <hr style="border-color: #00000033; width: 65%;">
+    <hr>
     <h2>${jsonQuizData.description}</h2>`
   );
 
@@ -14,8 +16,9 @@ function buildQuiz(topBarContainer, quizContainer) {
     var answers = []
     var images = []
 
+    // Addition of the image
     images.push(
-      `<img src="${question.img}" alt="${question.caption}" style="width: 80%; height: auto; border-radius: 3px;">`
+      `<img src="${question.img}" alt="${question.caption}">`
     )
 
     // Bellow is the logic which checks for what type of question it is

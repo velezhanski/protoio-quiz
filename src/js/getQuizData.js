@@ -13,11 +13,11 @@ function getQuizData() {
       alert("json not found");
     }
   });
-  
+
   return jsonQuizData
 }
 
-// Here we get the Quiz Data from the JSON file and put it into the jsonQuizData variable
+// Here we get the Result Data from the JSON file and put it into the jsonResultsData variable
 function getResultsData() {
   var jsonResultsData
   $.ajax({

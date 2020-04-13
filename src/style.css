@@ -24,6 +24,18 @@ h2 {
   padding: 10px;
 }
 
+hr {
+  border-color: #00000033;
+  width: 65%;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  border-radius: 3px;
+  padding: 10px;
+}
+
 .top-container {
   background-color: #05a1c075;
   border-radius: 10px;
@@ -97,4 +109,40 @@ button:hover {
 .quiz-box {
   height: auto;
   margin: 40px;
+}
+
+/* Popup */
+.hover_bkgr_fricc {
+  background: rgba(0, 0, 0, .4);
+  display: none;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.hover_bkgr_fricc .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.hover_bkgr_fricc>div {
+  background-color: #1b2023eb;
+  box-shadow: 10px 10px 60px #555;
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+  position: relative;
+  border-radius: 8px;
+  padding: 30px 5%;
+}
+
+.trigger_popup_fricc {
+  font-size: 20px;
+  margin: 20px;
+  display: inline-block;
+  font-weight: bold;
 }
