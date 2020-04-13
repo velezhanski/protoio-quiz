@@ -17,11 +17,3 @@ function slideController(n) {
   }
   nextButton.disabled = false;
 }
-
-// Validates answer and moves to next slide
-function showNextSlide(currentQuestionId) {
-  validateAnswer(currentQuestionId);
-  setTimeout(function () {
-    slideController(currentSlide + 1)
-  }, 3000);
-}

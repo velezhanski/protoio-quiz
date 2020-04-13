@@ -14,19 +14,21 @@ var jsonResultsData = getResultsData();
 // Builds the Quiz
 var quizData = buildQuiz(topBarContainer, quizContainer);
 
-// Switches to next Slide
+// Validates answer and switches to next slide
 nextButton.addEventListener("click", function () {
-  showNextSlide(currentSlide)
+  validateAnswer(currentSlide);
+  setTimeout(function () {
+    slideController(currentSlide + 1)
+  }, 3000);
 });
 
 // Controls the Slides
 slideController(currentSlide);
 
-// Show Results
+// Validate last answer and show results
 submitButton.addEventListener("click", function () {
   validateAnswer(currentSlide);
-  showResult(resultsContainer);
   setTimeout(function () {
-    $('.hover_bkgr_fricc').show();
+    showResult(resultsContainer);
   }, 3000);
 });

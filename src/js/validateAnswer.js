@@ -43,7 +43,7 @@ function validateAnswer(currentQuestionId) {
       for (var i = 0; i < selected.length; i++) {
         selected[i].parentElement.style.color = "lightgreen"
       }
-      
+
     } else {
       if (userAnswer != []) {
         for (var i = 0; i < selected.length; i++) {
