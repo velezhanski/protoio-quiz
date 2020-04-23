@@ -18,7 +18,7 @@ function validateAnswer(currentQuestionId) {
   if (question[0].question_type == "mutiplechoice-single" || question[0].question_type == "truefalse") {
     const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-    if (userAnswer == question[0].correct_answer) {
+    if (userAnswer.toString() == question[0].correct_answer.toString()) {
       score += jsonQuizData.questions[currentQuestionId].points;
       answerContainer.querySelector(selector).parentElement.style.color = 'lightgreen';
 
@@ -26,6 +26,7 @@ function validateAnswer(currentQuestionId) {
       if (userAnswer != undefined) {
         answerContainer.querySelector(selector).parentElement.style.color = 'red';
       }
+
       answerContainer.querySelector(`input[value="${question[0].correct_answer}"]`).parentElement.style.color = 'lightgreen';
     }
 
