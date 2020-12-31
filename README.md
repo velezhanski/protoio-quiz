@@ -1,20 +1,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 ## About The Project
-This was built for an interview test, it's a simple clean app which pulls JSON data from a server using AJAX, and outputs it into the App. Let's hope that it will land me the job :smile:
-
-## Getting Started
-All you need to get started is launch a server from the src folder. 
+This app was created for the CS50 Final Project. I am a big fan of the Game Of Thrones so I decided to create a quiz based on the series. It's a simple clean app which pulls JSON data from a server using AJAX, and outputs it into the App. I believe that the course really helped me in understanding the generic side of coding and development. And it was really interesting :smile:
+Anayways, so what the app is, is a quiz, where you have different types of selectors and in the end of the quiz you will get your score calculated based on the correctness of your answers.
 
 ## Built With
 * [JQuery](https://jquery.com)
 * [JS](https://www.javascript.com)
-
-## Contact
-Alex Filipenko - [LinkedIn](https://www.linkedin.com/in/afilipenko) - alexfilipenko719@gmail.com
-
-Project Link: [https://github.com/velezhanski/protoio-quiz](https://github.com/velezhanski/protoio-quiz)
-
 
 <!-- LINKS -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
